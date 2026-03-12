@@ -47,7 +47,7 @@ const C = {
 };
 
 async function analyzeWineLabel(base64Image, mediaType) {
-  const response = await fetch("http://localhost:3001/analyze", {
+  const response = await fetch("https://wine-app-vtrj.onrender.com/analyze", {
     method: "POST",
     headers: { "Content-Type": "application/json" },
     body: JSON.stringify({ base64Image, mediaType })
